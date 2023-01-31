@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package demo;
+
+option go_package = "github.com/yuki/api/go/demo/v1";
+
+message Demo {
+  string name = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package greet;
+
+option go_package = "github.com/yuki/api/go/greet/v1";
+
+import public "pb/user/v1/user.proto";
+
+// old user definition, was move to pb/user/v1 permenant
+

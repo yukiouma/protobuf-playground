@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package greet;
+
+option go_package = "github.com/yuki/api/go/user/v1";
+
+import "google/protobuf/timestamp.proto";
+
+enum Gender {
+  MISS = 0;
+  MR = 1;
+}
+
+message User {
+  string firstName = 1;
+  string lastName = 2;
+  Gender gender = 3;
+  double age = 4;
+  google.protobuf.Timestamp birthday = 5;
+}

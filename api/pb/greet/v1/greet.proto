@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package greet;
+
+option go_package = "github.com/yuki/api/go/greet/v1";
+
+import "pb/greet/v1/user.proto";
+
+message Greet {
+  greet.User user = 1;
+}
